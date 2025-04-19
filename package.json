@@ -1,5 +1,5 @@
 {
-  "name": "rsbuild-react-ts",
+  "name": "busy-app",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -9,6 +9,9 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "^0.3.5",
+    "@lynx-js/react-rsbuild-plugin": "^0.9.6",
+    "@lynx-js/rspeedy": "^0.9.1",
     "@lynx-js/web-core": "^0.11.0",
     "@lynx-js/web-elements": "^0.5.4",
     "react": "^19.1.0",
