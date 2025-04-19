@@ -1,28 +1,31 @@
 {
-  "name": "busy-app",
-  "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "rsbuild build",
-    "dev": "rsbuild dev --open",
-    "preview": "rsbuild preview"
-  },
-  "dependencies": {
-    "@lynx-js/qrcode-rsbuild-plugin": "^0.3.5",
-    "@lynx-js/react-rsbuild-plugin": "^0.9.6",
-    "@lynx-js/rspeedy": "^0.9.1",
-    "@lynx-js/web-core": "^0.11.0",
-    "@lynx-js/web-elements": "^0.5.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
-  },
-  "devDependencies": {
-    "@rsbuild/core": "^1.3.1",
-    "@rsbuild/plugin-react": "^1.1.1",
-    "@types/node": "^22.14.1",
-    "@types/react": "^19.1.0",
-    "@types/react-dom": "^19.1.1",
-    "typescript": "^5.8.2"
-  }
+	"name": "busy-app",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "eslint .",
+		"preview": "vite preview",
+		"deploy": "vite build && gh-pages -d dist"
+	},
+	"dependencies": {
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.22.0",
+		"@types/react": "^19.0.10",
+		"@types/react-dom": "^19.0.4",
+		"@vitejs/plugin-react": "^4.3.4",
+		"eslint": "^9.22.0",
+		"eslint-plugin-react-hooks": "^5.2.0",
+		"eslint-plugin-react-refresh": "^0.4.19",
+		"globals": "^16.0.0",
+		"typescript": "~5.7.2",
+		"typescript-eslint": "^8.26.1",
+		"vite": "^6.3.1",
+		"vite-plugin-pwa": "^1.0.0"
+	}
 }
