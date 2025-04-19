@@ -14,7 +14,7 @@ export default defineConfig({
           __dirname,
           '../',
           // Please replace this with your actual Lynx project name
-          'lynx-project',
+          'busy-app',
           'dist',
         ),
       },
