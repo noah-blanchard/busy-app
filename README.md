@@ -1,21 +1,29 @@
-## Rspeedy project
+# Rsbuild project
 
-This is a ReactLynx project bootstrapped with `create-rspeedy`.
+## Setup
 
-## Getting Started
-
-First, install the dependencies:
+Install the dependencies:
 
 ```bash
 pnpm install
 ```
 
-Then, run the development server:
+## Get started
+
+Start the dev server:
 
 ```bash
-pnpm run dev
+pnpm dev
 ```
 
-Scan the QRCode in the terminal with your LynxExplorer App to see the result.
+Build the app for production:
 
-You can start editing the page by modifying `src/App.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm build
+```
+
+Preview the production build locally:
+
+```bash
+pnpm preview
+```
