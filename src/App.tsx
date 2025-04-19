@@ -35,7 +35,7 @@ export function App() {
 				<view className="Content">
 					<image src={arrow} className="Arrow" />
 					<text className="Description">
-						Tap the szdfghlogo and have fun! HELLO
+						Tap the szdfghlogo and have fun! HELLO TRESTR
 					</text>
 					<text className="Hint">
 						Edit<text style={{ fontStyle: "italic" }}>{" src/App.tsx "}</text>
