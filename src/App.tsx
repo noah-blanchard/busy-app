@@ -109,28 +109,39 @@ function App() {
 	}, [user]);
 
 	return (
-		<div style={{ textAlign: "center", padding: 40 }}>
-			{!user ? (
-				<>
-					<h2>Tu es ?</h2>
-					<button onClick={() => saveUser("nono")}>Nono</button>
-					<button onClick={() => saveUser("lili")}>Lili</button>
-				</>
-			) : (
-				<>
-					<h2>Hello {user} 👋</h2>
-					<button onClick={toggleBusy} disabled={loading}>
-						{loading
-							? "Updating..."
-							: iAmBusy
-								? "I am available !"
-								: "I am busy !"}
-					</button>
-					<p style={{ marginTop: 20 }}>
-						{getOther(user)} is {otherBusy ? "busy 🛑" : "available ✅"}
-					</p>
-				</>
-			)}
+		<div
+			style={{
+				display: "flex",
+				flexDirection: "column",
+				alignItems: "center",
+				justifyContent: "center",
+				width: "100%",
+				height: "100%",
+			}}
+		>
+			<div style={{ textAlign: "center", padding: 40 }}>
+				{!user ? (
+					<>
+						<h2>Who are you ?</h2>
+						<button onClick={() => saveUser("nono")}>Nono</button>
+						<button onClick={() => saveUser("lili")}>Lili</button>
+					</>
+				) : (
+					<>
+						<h2>Hello {user} 👋</h2>
+						<button onClick={toggleBusy} disabled={loading}>
+							{loading
+								? "Updating..."
+								: iAmBusy
+									? "I am available !"
+									: "I am busy !"}
+						</button>
+						<p style={{ marginTop: 20 }}>
+							{getOther(user)} is {otherBusy ? "busy 🛑" : "available ✅"}
+						</p>
+					</>
+				)}
+			</div>
 		</div>
 	);
 }
