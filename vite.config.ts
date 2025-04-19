@@ -15,9 +15,9 @@ export default defineConfig({
     },
 
     manifest: {
-      name: 'busy-app',
-      short_name: 'busy-app',
-      description: 'busy-app',
+      name: 'BusyRoommate',
+      short_name: 'Busy',
+      description: 'For Nono Lili',
       theme_color: '#ffffff',
     },
 
